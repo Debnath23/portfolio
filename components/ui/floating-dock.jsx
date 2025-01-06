@@ -24,7 +24,7 @@ export const FloatingDock = ({ items, desktopClassName, mobileClassName }) => {
 const FloatingDockMobile = ({ items, className }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div className={cn("absolute block md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -51,6 +51,8 @@ const FloatingDockMobile = ({ items, className }) => {
                 <Link
                   href={item.href}
                   key={item.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
@@ -77,7 +79,7 @@ const FloatingDockDesktop = ({ items, className }) => {
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3 absolute bottom-3",
         className
       )}
     >

@@ -6,9 +6,13 @@ import {
   IconBrandLinkedin,
   IconBrightnessDown,
   IconHome,
+  IconMoonStars,
 } from "@tabler/icons-react";
+import { useTheme } from "@/context/ThemeContext";
 
 export function Links() {
+  const { theme, toggleTheme } = useTheme();
+
   const links = [
     {
       title: "Home",
@@ -41,9 +45,12 @@ export function Links() {
     {
       title: "Theme",
       icon: (
-        <IconBrightnessDown className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        theme === "dark" ?
+        <IconBrightnessDown onClick={toggleTheme} className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        :
+        <IconMoonStars onClick={toggleTheme} className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://www.linkedin.com/in/debnath-mahapatra/",
+      href: '#'
     },
   ];
   return (
