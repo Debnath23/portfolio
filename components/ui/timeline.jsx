@@ -29,7 +29,7 @@ export const Timeline = ({
       className="w-full bg-white dark:bg-neutral-950 font-sans"
       ref={containerRef}>
       <div className="max-w-7xl pt-10 px-0 md:px-0 lg:px-0">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold">
+        <h2 className="text-lg md:text-4xl mb-4 text-slate-800 dark:text-slate-200 max-w-4xl font-bold">
           Changelog from my journey
         </h2>
         <p

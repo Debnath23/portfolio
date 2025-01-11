@@ -3,6 +3,8 @@ import React from "react";
 import { Links } from "@/components/Links";
 import { TimelineDemo } from "@/components/Timeline";
 import { useTheme } from "@/context/ThemeContext";
+import { Meteors } from "@/components/ui/meteors";
+import ProjectSection from "@/components/sections/ProjectSection";
 
 export default function Home() {
 
@@ -11,7 +13,8 @@ export default function Home() {
   return (
     <div className={`${theme} bg-white dark:bg-neutral-950`}>
       <div className="flex flex-col">
-        <section id="hero" className="bg-white dark:bg-neutral-950 px-[220px] pt-24">
+
+        <section id="hero" className="bg-white dark:bg-neutral-950 sm:px-10 xl:px-[220px] pt-24">
           <div className="mx-auto w-full">
             <div className="flex justify-between gap-2">
               <div className="flex-col flex flex-1 space-y-1.5">
@@ -40,32 +43,18 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <Meteors number={25} />
         </section>
 
-        <section id="timeline" className="bg-white dark:bg-neutral-950 px-[220px] py-16">
+        <section id="timeline" className="bg-white dark:bg-neutral-950 sm:px-10 xl:px-[220px] py-16">
           <TimelineDemo />
         </section>
 
-        <section id="projects" className="bg-white dark:bg-neutral-950 px-[220px]">
-          <div className="">
-            <div className="flex justify-between gap-2">
-              <div className="flex-col flex flex-1 space-y-1.5">
-                <div className="flex">
-                  <span className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-slate-800 dark:text-slate-200">
-                    Projects
-                  </span>
-                </div>
-                <div className="flex">
-                  <span className="max-w-[600px] text-2xl font-semibold text-slate-800 dark:text-slate-200">
-                    Some of my projects
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <section id="projects" className="bg-white dark:bg-neutral-950 sm:px-10 xl:px-[220px] py-16">
+          <ProjectSection />
         </section>
 
-        <section id="skills" className="bg-white dark:bg-neutral-950 px-[220px]">
+        <section id="skills" className="bg-white dark:bg-neutral-950 sm:px-10 xl:px-[220px]">
           <div className="">
             <div className="flex justify-between gap-2">
               <div className="flex-col flex flex-1 space-y-1.5">
@@ -84,7 +73,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="bg-white dark:bg-neutral-950 px-[220px]">
+        <section id="contact" className="bg-white dark:bg-neutral-950 sm:px-10 xl:px-[220px]">
           <div className="">
             <div className="flex justify-between gap-2">
               <div className="flex-col flex flex-1 space-y-1.5">
@@ -107,6 +96,7 @@ export default function Home() {
           <Links />
         </footer>
       </div>
+      
     </div>
   );
 }
