@@ -19,7 +19,7 @@ export function Links() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#header",
+      href: "/",
     },
     {
       title: "Resume",
@@ -44,18 +44,24 @@ export function Links() {
     },
     {
       title: "Theme",
-      icon: (
-        theme === "dark" ?
-        <IconBrightnessDown onClick={toggleTheme} className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        :
-        <IconMoonStars onClick={toggleTheme} className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: '#'
+      icon:
+        theme === "dark" ? (
+          <IconBrightnessDown
+            onClick={toggleTheme}
+            className="h-full w-full text-neutral-500 dark:text-neutral-300"
+          />
+        ) : (
+          <IconMoonStars
+            onClick={toggleTheme}
+            className="h-full w-full text-neutral-500 dark:text-neutral-300"
+          />
+        ),
+      href: "#",
     },
   ];
   return (
     <div className="flex items-center justify-center">
-      <FloatingDock mobileClassName="translate-y-20" items={links} />
+      <FloatingDock mobileClassName="absolute bottom-2 z-20" items={links} />
     </div>
   );
 }

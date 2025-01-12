@@ -38,7 +38,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
-                  key={testimonial.src}
+                  key={testimonial.id}
                   initial={{
                     opacity: 0,
                     scale: 0.9,
@@ -111,8 +111,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                 <p className="text-sm text-black dark:text-neutral-400">
                   Check Out
                 </p>
-
-                <IconArrowRight className="h-4 w-4 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
+                <IconArrowRight className="h-4 w-4 text-black dark:text-neutral-400" />
               </button>
             </Link>
             <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
