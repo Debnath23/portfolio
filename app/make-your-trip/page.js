@@ -155,7 +155,7 @@ function page() {
                     Links:
                   </h3>
                   <div className="md:flex gap-2">
-                    <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold">
+                    <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold mr-1">
                       Frontend Code:
                     </span>
                     <a
@@ -167,7 +167,7 @@ function page() {
                     </a>
                   </div>
                   <div className="md:flex gap-2">
-                    <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold">
+                    <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold mr-1">
                       Backend Code:
                     </span>
                     <a
@@ -179,7 +179,7 @@ function page() {
                     </a>
                   </div>
                   <div className="md:flex gap-2">
-                    <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold">
+                    <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold mr-1">
                       Swagger APIs:
                     </span>
                     <a

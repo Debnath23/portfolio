@@ -190,7 +190,7 @@ function page() {
                   </h3>
                   <div className="">
                     <div className="md:flex gap-2">
-                      <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold">
+                      <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold mr-1">
                         Source Code:
                       </span>
                       <a
