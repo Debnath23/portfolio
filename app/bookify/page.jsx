@@ -11,10 +11,10 @@ function Page() {
   return (
     <div className={`${theme} bg-white dark:bg-neutral-950`}>
       <div className="flex flex-col bg-white dark:bg-neutral-950 px-4 sm:px-6 md:px-10 xl:px-[220px] pt-8 md:pt-12 pb-4">
-        <div className="pb-12">
-          <div className="flex flex-col-reverse md:flex-row justify-between gap-6 md:gap-10 py-4">
+        <div className="pb-16">
+          <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10 py-4">
             {/* Left Section */}
-            <div className="w-full md:w-3/5">
+            <div className="w-full lg:w-3/5">
               <h1 className="text-3xl font-bold tracking-tight text-slate-800 dark:text-slate-200">
                 Doctor Appointment Booking System
               </h1>
@@ -27,7 +27,7 @@ function Page() {
               {/* Features */}
               <div className="mt-6 space-y-6">
                 <div>
-                  <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200">
+                  <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-200 pb-2">
                     Key Features:
                   </h2>
 
@@ -116,38 +116,6 @@ function Page() {
 
                 <div>
                   <h3 className="font-semibold text-slate-800 dark:text-slate-200">
-                    Links:
-                  </h3>
-                  <div className="space-y-2">
-                    <div className="flex gap-2">
-                      <span className="text-slate-800 dark:text-slate-200">
-                        Check It Out:
-                      </span>
-                      <a
-                        href="/"
-                        target="_blank"
-                        className="text-blue-700 underline"
-                      >
-                        https://bookify.com
-                      </a>
-                    </div>
-                    <div className="flex gap-2">
-                      <span className="text-slate-800 dark:text-slate-200">
-                        Swagger APIs:
-                      </span>
-                      <a
-                        href="https://doctor-appointment-booking-backend-165h.onrender.com/swagger#/"
-                        target="_blank"
-                        className="text-blue-700 underline"
-                      >
-                        https://bookify.com/swagger#/
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-slate-800 dark:text-slate-200">
                     Outcome:
                   </h3>
                   <p className="text-slate-800 dark:text-slate-200">
@@ -158,12 +126,76 @@ function Page() {
                     improving user satisfaction.
                   </p>
                 </div>
+
+                <div>
+                  <h3 className="font-semibold text-slate-800 dark:text-slate-200">
+                    Links:
+                  </h3>
+                  <div className="space-y-1">
+                    {/* Check It Out */}
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-2">
+                      <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold">
+                        Check It Out:
+                      </span>
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-700 underline text-sm"
+                      >
+                        https://bookify.com
+                      </a>
+                    </div>
+                    {/* Swagger APIs */}
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-2">
+                      <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold">
+                        Swagger APIs:
+                      </span>
+                      <a
+                        href="https://doctor-appointment-booking-backend-165h.onrender.com/swagger#/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-700 underline text-sm"
+                      >
+                        https://bookify.com/swagger#/
+                      </a>
+                    </div>
+                    {/* Frontend Code */}
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-2">
+                      <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold">
+                        Frontend Code:
+                      </span>
+                      <a
+                        href="https://github.com/Debnath23/Doctor_Appointment_Booking"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-700 underline text-sm"
+                      >
+                        https://github.com/Debnath23/Doctor_Appointment_Booking
+                      </a>
+                    </div>
+                    {/* Backend Code */}
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-2">
+                      <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold">
+                        Backend Code:
+                      </span>
+                      <a
+                        href="https://github.com/Debnath23/doctor-appointment-booking-backend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-700 underline text-sm"
+                      >
+                        https://github.com/Debnath23/doctor-appointment-booking-backend
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="pt-[120px] max-md:hidden">
-              <PinContainer title="/bookify" href="/">
-                <div className="max-w-md flex flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[500px] h-auto">
+            <div className="pt-[60px] md:pt-[120px]">
+              <PinContainer title="/bookify" href="#">
+                <div className="max-w-md flex flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[360px] md:w-[500px] h-auto">
                   <Image
                     src="/assets/p-1.png"
                     alt="Doctor Appointment Booking System"
@@ -173,7 +205,7 @@ function Page() {
                   />
                 </div>
               </PinContainer>
-              <p className="text-slate-800 dark:text-slate-200 mt-10 text-center text-sm font-medium">
+              <p className="text-slate-600 dark:text-slate-300 mt-10 text-center text-sm font-medium">
                 Hover on it
               </p>
             </div>

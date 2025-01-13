@@ -30,10 +30,10 @@ export const ShowScreens = ({ testimonials, autoplay = false }) => {
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
-    <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
+    <div className="max-w-sm md:max-w-2xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-10 py-0">
       <div className="relative">
         <div>
-          <div className="relative h-[450px] w-[300px]">
+          <div className="relative h-[430px] w-[200px] md:h-[650px] md:w-[300px] flex justify-center items-center">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -72,7 +72,7 @@ export const ShowScreens = ({ testimonials, autoplay = false }) => {
                     width={500}
                     height={500}
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-contain object-center"
+                    className="h-full w-full rounded-3xl object-cover object-center"
                   />
                 </motion.div>
               ))}

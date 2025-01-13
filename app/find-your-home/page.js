@@ -20,7 +20,7 @@ function page() {
   const testimonials = [
     {
       id: 1,
-      src: "/assets/project2/1.jpg",
+      src: "/assets/project2/3.jpg",
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ function page() {
     },
     {
       id: 3,
-      src: "/assets/project2/3.jpg",
+      src: "/assets/project2/1.jpg",
     },
     {
       id: 4,
@@ -46,7 +46,24 @@ function page() {
       id: 7,
       src: "/assets/project2/7.jpg",
     },
+    {
+      id: 8,
+      src: "/assets/project2/8.jpg",
+    },
+    {
+      id: 9,
+      src: "/assets/project2/9.jpg",
+    },
+    {
+      id: 10,
+      src: "/assets/project2/10.jpg",
+    },
+    {
+      id: 11,
+      src: "/assets/project2/11.jpg",
+    },
   ];
+
   return (
     <div className={`${theme} bg-white dark:bg-neutral-950`}>
       <div className="flex flex-col bg-white dark:bg-neutral-950 px-4 sm:px-6 md:px-10 xl:px-[220px] pt-8 md:pt-12 pb-4">
@@ -66,7 +83,7 @@ function page() {
               {/* Features */}
               <div className="mt-6 space-y-6">
                 <div>
-                  <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200">
+                  <h2 className="text-xl md:text-2xl font-bold pb-2 text-slate-800 dark:text-slate-200">
                     Key Features:
                   </h2>
                   <div>
@@ -167,16 +184,38 @@ function page() {
                   </p>
                 </div>
 
-                <button
-                  onClick={handleDownload}
-                  className="text-slate-600 dark:text-neutral-800 bg-green-400 dark:bg-green-300 px-4 py-2 rounded-full font-semibold"
-                >
-                  Download
-                </button>
+                <div>
+                  <h3 className="font-semibold text-slate-800 dark:text-slate-200">
+                    Links:
+                  </h3>
+                  <div className="">
+                    <div className="md:flex gap-2">
+                      <span className="text-slate-800 dark:text-slate-200 text-sm font-semibold">
+                        Source Code:
+                      </span>
+                      <a
+                        href="https://github.com/Debnath23/find-your-dream-home"
+                        target="_blank"
+                        className="text-blue-700 underline text-sm"
+                      >
+                        https://github.com/Debnath23/find-your-dream-home
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="max-md:flex max-md:justify-center max-md:items-center">
+                  <button
+                    onClick={handleDownload}
+                    className="text-slate-600 dark:text-neutral-800 bg-green-400 dark:bg-green-300 px-4 py-2 rounded-full font-semibold"
+                  >
+                    Download
+                  </button>
+                </div>
               </div>
             </div>
 
-            <div>
+            <div className="max-md:flex max-md:justify-center max-md:items-center">
               <ShowScreens testimonials={testimonials} />
             </div>
           </div>
