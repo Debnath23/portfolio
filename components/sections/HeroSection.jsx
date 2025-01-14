@@ -1,5 +1,5 @@
 import React from "react";
-// import { Meteors } from "../ui/meteors";
+import { Meteors } from "../ui/meteors";
 
 function HeroSection() {
   return (
@@ -25,7 +25,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
-      {/* <Meteors number={20} /> */}
+      <Meteors number={20} className="max-md:hidden" />
     </div>
   );
 }
