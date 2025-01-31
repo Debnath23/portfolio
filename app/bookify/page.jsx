@@ -138,12 +138,12 @@ function Page() {
                         Check It Out:
                       </span>
                       <a
-                        href="#"
+                        href="https://bookify-beta.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-700 underline text-sm"
                       >
-                        https://bookify.com
+                        https://bookify-beta.vercel.app/
                       </a>
                     </div>
                     {/* Swagger APIs */}
@@ -157,7 +157,7 @@ function Page() {
                         rel="noopener noreferrer"
                         className="text-blue-700 underline text-sm"
                       >
-                        https://bookify.com/swagger#/
+                        https://bookify-beta.vercel.app/swagger#/
                       </a>
                     </div>
                     {/* Frontend Code */}
@@ -166,12 +166,12 @@ function Page() {
                         Frontend Code:
                       </span>
                       <a
-                        href="https://github.com/Debnath23/Doctor_Appointment_Booking"
+                        href="https://github.com/Debnath23/bookify"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-700 underline text-sm"
                       >
-                        https://github.com/Debnath23/Doctor_Appointment_Booking
+                        https://github.com/Debnath23/bookify
                       </a>
                     </div>
                     {/* Backend Code */}
@@ -194,7 +194,7 @@ function Page() {
             </div>
 
             <div className="pt-[60px] md:pt-[120px]">
-              <PinContainer title="/bookify" href="#">
+              <PinContainer title="bookify-beta.vercel.app" href="https://bookify-beta.vercel.app/">
                 <div className="max-w-md flex flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[360px] md:w-[500px] h-auto">
                   <Image
                     src="/assets/p-1.png"
