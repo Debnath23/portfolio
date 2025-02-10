@@ -8,20 +8,20 @@ function ProjectSection() {
     {
       id: 1,
       quote:
-        "A cross-platform real-estate application enabling users to explore and find their dream homes, complete with attractive deals and property details.",
-      name: "Find Your Home",
-      designation: "Discover your ideal home with ease and get the best deals.",
-      src: "/assets/p-2.png",
-      href: "/find-your-home",
-    },
-    {
-      id: 2,
-      quote:
         "A full-stack application designed to streamline the scheduling and management of doctor appointments, fostering seamless communication between patients and healthcare providers.",
       name: "Bookify",
       designation: "Effortlessly book appointments and prioritize your health.",
       src: "/assets/p-1.png",
       href: "/bookify",
+    },
+    {
+      id: 2,
+      quote:
+        "A cross-platform real-estate application enabling users to explore and find their dream homes, complete with attractive deals and property details.",
+      name: "Find Your Home",
+      designation: "Discover your ideal home with ease and get the best deals.",
+      src: "/assets/p-2.png",
+      href: "/find-your-home",
     },
     {
       id: 3,
