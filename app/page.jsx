@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Links } from "@/components/Links";
+import { Links } from "../components/Links";
 import { TimelineDemo } from "../components/Timeline";
 import { useTheme } from "../context/ThemeContext";
 import ProjectSection from "../components/sections/ProjectSection";

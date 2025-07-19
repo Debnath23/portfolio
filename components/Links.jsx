@@ -1,5 +1,5 @@
 import React from "react";
-import { FloatingDock } from "@/components/ui/floating-dock";
+import { FloatingDock } from "../components/ui/floating-dock";
 import {
   IconBrandGithub,
   IconBrandGoogleDrive,
@@ -8,7 +8,7 @@ import {
   IconHome,
   IconMoonStars,
 } from "@tabler/icons-react";
-import { useTheme } from "@/context/ThemeContext";
+import { useTheme } from "../context/ThemeContext";
 
 export function Links() {
   const { theme, toggleTheme } = useTheme();
