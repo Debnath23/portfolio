@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { PinContainer } from "@/components/ui/3d-pin";
+import { PinContainer } from "../../components/ui/3d-pin";
 import Image from "next/image";
-import { useTheme } from "@/context/ThemeContext";
-import { Links } from "@/components/Links";
+import { useTheme } from "../../context/ThemeContext";
+import { Links } from "../../components/Links";
 
 function Page() {
   const { theme } = useTheme();
