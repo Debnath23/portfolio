@@ -8,30 +8,20 @@ function ProjectSection() {
     {
       id: 1,
       quote:
-        "A full-stack application designed to streamline the scheduling and management of doctor appointments, fostering seamless communication between patients and healthcare providers.",
-      name: "Bookify",
-      designation: "Effortlessly book appointments and prioritize your health.",
+        "A video-enabled application enabling real-time communication with automated recording. Designed for seamless video sessions and secure cloud-based storage/playback.",
+      name: "Connect with Real Humans",
+      designation: "Discover your ideal home with ease and get the best deals.",
       src: "/assets/p-1.png",
-      href: "/bookify",
+      href: "/connect-with-real-humans",
     },
     {
       id: 2,
       quote:
-        "A cross-platform real-estate application enabling users to explore and find their dream homes, complete with attractive deals and property details.",
-      name: "Find Your Home",
-      designation: "Discover your ideal home with ease and get the best deals.",
+        "A full-stack application designed to streamline the scheduling and management of doctor appointments, fostering seamless communication between patients and healthcare providers.",
+      name: "Bookify",
+      designation: "Effortlessly book appointments and prioritize your health.",
       src: "/assets/p-2.png",
-      href: "/find-your-home",
-    },
-    {
-      id: 3,
-      quote:
-        "An intuitive travel-planning app designed to make trips hassle-free by integrating advanced tools like Gemini APIs for planning and Google Location APIs for navigation.",
-      name: "Make Your Trip",
-      designation:
-        "Plan your next adventure effortlessly and cherish every moment.",
-      src: "/assets/p-3.webp",
-      href: "/make-your-trip",
+      href: "/bookify",
     },
   ];
   return (

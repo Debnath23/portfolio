@@ -4,6 +4,61 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
+      title: "Beginning 2025",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-3xl font-extrabold mb-2">
+            Full-Stack Developmer Intern
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-2xl font-bold mb-4">
+            Duration: Feb 2025 – May 2025
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-xl font-semibold mb-2">
+            Projects During My Internship Period:
+          </p>
+
+          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-semibold mb-1">
+            BlogHunch Creator Platform
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-medium mb-0.5">
+            Overview: Contributed to the core product of BlogHunch — a modern
+            content creation and publishing platform for creators, bloggers, and
+            publishers.
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-medium mb-0.5">
+            Responsibilities:
+          </p>
+          <ul className="pl-5 text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-medium mb-2">
+            <li>
+              ✅ Built and integrated a dynamic editor using TipTap with
+              features like embeds, image uploads, galleries, resizable media,
+              and call-to-actions.
+            </li>
+            <li>
+              ✅ Developed advanced media tools including Unsplash and Giphy
+              integration.
+            </li>
+            <li>
+              ✅ Implemented HTML sanitization and post metadata configuration
+              (OpenGraph, Twitter).
+            </li>
+            <li>
+              ✅ Created reusable form components and optimized server actions
+              for post publishing.
+            </li>
+          </ul>
+
+          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-medium mb-0.5">
+            Technologies Used:
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-sm font-medium">
+            Next.js, React.js, Unplash, AWS S3, TipTap, TypeScript
+          </p>
+        </div>
+      ),
+    },
+
+    {
       title: "End 2024",
       content: (
         <div>
@@ -120,34 +175,6 @@ export function TimelineDemo() {
               SQL.
             </li>
             <li>✅ Ability to build and deploy full-stack applications.</li>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: "Changelog",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-3xl font-extrabold mb-2">
-            Skill Advancements
-          </p>
-          <ul className="pl-5 text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-medium mb-2">
-            <li>
-              ✅ Added **Find-Your-Home App**: A cross-platform real-estate app
-              built with React Native.
-            </li>
-            <li>
-              ✅ Added **Make-Your-Trip App**: A travel-planner app integrating
-              Gemini APIs and Google Location APIs.
-            </li>
-            <li>
-              ✅ Enhanced portfolio with a fully responsive design and dark mode
-              toggle.
-            </li>
-            <li>
-              ✅ Showcased skills in React Native for cross-platform app
-              development.
-            </li>
           </ul>
         </div>
       ),

@@ -25,7 +25,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
-      <Meteors number={20} className="max-md:hidden" />
+      <Meteors number={30} className="max-md:hidden" />
     </div>
   );
 }

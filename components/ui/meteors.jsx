@@ -1,11 +1,23 @@
-import { cn } from "@/lib/utils";
-import React from "react";
+"use client";
 
-export const Meteors = ({ number, className }) => {
-  const meteors = new Array(number || 20).fill(true);
+import React, { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
+
+export const Meteors = ({ number = 20, className }) => {
+  const [styles, setStyles] = useState([]);
+
+  useEffect(() => {
+    const newStyles = Array.from({ length: number }).map(() => ({
+      left: `${Math.floor(Math.random() * 800 - 400)}px`,
+      animationDelay: `${Math.random() * 0.6 + 0.2}s`,
+      animationDuration: `${Math.floor(Math.random() * 8 + 2)}s`,
+    }));
+    setStyles(newStyles);
+  }, [number]);
+
   return (
     <>
-      {meteors.map((el, idx) => (
+      {styles.map((style, idx) => (
         <span
           key={"meteor" + idx}
           className={cn(
@@ -13,13 +25,8 @@ export const Meteors = ({ number, className }) => {
             "before:content-[''] before:absolute before:top-1/2 before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-[#3b82f6] before:to-transparent",
             className
           )}
-          style={{
-            top: 0,
-            left: Math.floor(Math.random() * (400 - -400) + -400) + "px",
-            animationDelay: Math.random() * (0.8 - 0.2) + 0.2 + "s",
-            animationDuration: Math.floor(Math.random() * (10 - 2) + 2) + "s",
-          }}
-        ></span>
+          style={{ top: 0, ...style }}
+        />
       ))}
     </>
   );
