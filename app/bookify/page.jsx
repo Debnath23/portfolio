@@ -197,7 +197,7 @@ function Page() {
               <PinContainer title="bookify-beta.vercel.app" href="https://bookify-beta.vercel.app/">
                 <div className="max-w-md flex flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[360px] md:w-[500px] h-auto">
                   <Image
-                    src="/assets/p-1.png"
+                    src="/assets/p-2.png"
                     alt="Doctor Appointment Booking System"
                     width={500}
                     height={900}
