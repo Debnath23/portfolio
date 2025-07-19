@@ -4,6 +4,7 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
+<<<<<<< HEAD
       title: "Beginning 2025",
       content: (
         <div>
@@ -58,6 +59,36 @@ export function TimelineDemo() {
       ),
     },
 
+=======
+  title: "Early 2025",
+  content: (
+    <div>
+      <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-3xl font-extrabold mb-2">
+        Full-Stack Developer Intern
+      </p>
+      <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-2xl font-bold mb-4">
+        Duration: February 2025 – April 2025
+      </p>
+      <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-xl font-semibold mb-2">
+        Contributions During Internship:
+      </p>
+      <ul className="pl-5 text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-medium mb-2">
+        <li>✅ Led the migration of BlogHunch’s frontend from Vue.js to Next.js, improving performance and SEO.</li>
+        <li>✅ Rebuilt components, layouts, and routes using Next.js with SSR and static generation.</li>
+        <li>✅ Worked with designers and backend engineers to ensure a smooth, error-free transition.</li>
+        <li>✅ Introduced TypeScript, Tailwind CSS, and a modular architecture to improve maintainability.</li>
+        <li>✅ Helped achieve significantly better Lighthouse scores and faster page loads.</li>
+      </ul>
+      <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-medium mb-0.5">
+        Technologies Used:
+      </p>
+      <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-sm font-medium">
+        Next.js, TypeScript, Tailwind CSS, Vue.js (legacy), JavaScript
+      </p>
+    </div>
+  ),
+},
+>>>>>>> 93f9801b4779556b31cea250ba3c0d913723ee4e
     {
       title: "End 2024",
       content: (
